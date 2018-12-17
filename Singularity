@@ -13,7 +13,9 @@ export LC_ALL=C
 #---------------------------------------------------------------------
 
 apt-get update -y
-	
+apt-get install -y libhdf5-dev locales python3-dev python3-pip
+apt-get clean
+
 #pip3 install --upgrade -I setuptools
 pip3 install --upgrade keras 
 
