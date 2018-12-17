@@ -20,7 +20,6 @@ RUN pip3 install \
   python_speech_features \
   sox \
   librosa \
-  PyAudio \
   SpeechRecognition
   
 VOLUME /src
