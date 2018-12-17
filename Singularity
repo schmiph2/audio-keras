@@ -12,9 +12,7 @@ export LC_ALL=C
 %post
 #---------------------------------------------------------------------
 
-apt-get update && apt-get -y install \
-			python3-tk \
-
+apt-get update && apt-get upgrade
 	
 pip3 install --upgrade -I setuptools
 pip3 install --upgrade keras 
