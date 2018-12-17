@@ -33,4 +33,4 @@ pip3 install \
 	sox \
 	librosa \
 	PyAudio \
-SpeechRecognition \
+	SpeechRecognition \
