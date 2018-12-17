@@ -14,7 +14,7 @@ export LC_ALL=C
 
 apt-get update -y && apt-get upgrade -y
 	
-pip3 install --upgrade -I setuptools
+#pip3 install --upgrade -I setuptools
 pip3 install --upgrade keras 
 
 	
