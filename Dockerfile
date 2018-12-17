@@ -14,7 +14,7 @@ RUN pip3 install \
   jupyter \
   matplotlib \
   seaborn	\
-  Image
+  Image \
   scikit-learn \
   lxml \
   joblib \
