@@ -21,7 +21,7 @@ RUN pip3 install \
   sox \
   librosa \
   SpeechRecognition
-RUN apt-get install ffmpeg 
+RUN apt-get install ffmpeg && apt-get install libavcodec-extra 
 VOLUME /src
 WORKDIR /src
 EXPOSE 8888
