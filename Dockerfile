@@ -21,7 +21,8 @@ RUN pip3 install \
   sox \
   librosa \
   SpeechRecognition
-  
+RUN add-apt-repository ppa:kirillshkrogalev/ffmpeg-next && apt-get update && apt-get install ffmpeg
+ 
 VOLUME /src
 WORKDIR /src
 EXPOSE 8888
