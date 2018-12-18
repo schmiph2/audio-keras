@@ -24,8 +24,9 @@ RUN pip3 install \
   
 RUN add-apt-repository ppa:jonathonf/ffmpeg-4
 RUN apt-get update
-RUN apt-get -y install ffmpeg && apt-get -y install libavcodec-extra VOLUME /src
+RUN apt-get -y install ffmpeg && apt-get -y install libavcodec-extra 
 
+VOLUME /src
 WORKDIR /src
 EXPOSE 8888
 CMD jupyter notebook --port=8888 --ip=0.0.0.0 --allow-root
