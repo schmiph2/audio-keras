@@ -5,9 +5,10 @@ RUN apt-get update && apt-get -y install \
 			python3-tk \
 	&& rm -rf /var/lib/apt/lists/* #cleans up apt cache -> reduces image size
 RUN apt-get -y install python3-dev
+RUN apt-get -y install git
+RUN apt-get -y install htop
 RUN pip3 install --upgrade -I setuptools
-RUN pip3 install --upgrade keras 
-	
+RUN pip3 install --upgrade keras 	
 RUN pip3 install \
   jupyter \
   matplotlib \
