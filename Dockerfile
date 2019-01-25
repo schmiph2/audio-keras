@@ -21,7 +21,8 @@ RUN pip3 install \
   python_speech_features \
   sox \
   librosa \
-  SpeechRecognition
+  SpeechRecognition \
+  spectrum
   
 RUN add-apt-repository ppa:jonathonf/ffmpeg-4
 RUN apt-get update
