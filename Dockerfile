@@ -23,7 +23,7 @@ RUN pip3 install \
   librosa \
   SpeechRecognition \
   spectrum
-  
+RUN pip3 install pysptk  
 RUN add-apt-repository ppa:jonathonf/ffmpeg-4
 RUN apt-get update
 RUN apt-get -y install ffmpeg && apt-get -y install libavcodec-extra 
