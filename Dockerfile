@@ -24,6 +24,7 @@ RUN pip3 install \
   SpeechRecognition \
   spectrum
 RUN pip3 install pysptk  
+RUN pip3 install samplerate
 RUN add-apt-repository ppa:jonathonf/ffmpeg-4
 RUN apt-get update
 RUN apt-get -y install ffmpeg && apt-get -y install libavcodec-extra 
