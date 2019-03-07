@@ -30,14 +30,7 @@ RUN apt-get update
 RUN apt-get -y install ffmpeg && apt-get -y install libavcodec-extra 
 RUN apt-get -y install sox
 
-RUN wget http://www.cmake.org/files/v3.12/cmake-3.12.1.tar.gz 
-RUN tar -xvzf cmake-3.12.1.tar.gz
-RUN cd cmake-3.12.1/ 
-RUN ./configure
-RUN make
-RUN make install
-RUN update-alternatives --install /usr/bin/cmake cmake /usr/local/bin/cmake 1 --force
-
+RUN apt-get -y install cmake
 RUN pip3 install https://github.com/DavidDiazGuerra/gpuRIR/zipball/master
 VOLUME /src
 WORKDIR /src
