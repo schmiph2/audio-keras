@@ -30,7 +30,7 @@ RUN apt-get update
 RUN apt-get -y install ffmpeg && apt-get -y install libavcodec-extra 
 RUN apt-get -y install sox
 
-RUN apt-get -y install cmake
+RUN pip3 install cmake
 RUN pip3 install https://github.com/DavidDiazGuerra/gpuRIR/zipball/master
 VOLUME /src
 WORKDIR /src
