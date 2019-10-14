@@ -33,7 +33,7 @@ RUN add-apt-repository ppa:jonathonf/ffmpeg-4
 RUN apt-get update
 RUN apt-get -y install ffmpeg && apt-get -y install libavcodec-extra 
 RUN apt-get -y install sox
-
+RUN jupyter labextension install jupyterlab_tensorboard
 VOLUME /src
 WORKDIR /src
 EXPOSE 8888
