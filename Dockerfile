@@ -34,6 +34,7 @@ RUN apt-get update
 RUN apt-get -y install ffmpeg && apt-get -y install libavcodec-extra 
 RUN apt-get -y install sox
 RUN jupyter labextension install jupyterlab_tensorboard
+RUN pip install jupyterlab_github
 RUN jupyter labextension install @jupyterlab/github
 VOLUME /src
 WORKDIR /src
