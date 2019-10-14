@@ -33,6 +33,10 @@ RUN add-apt-repository ppa:jonathonf/ffmpeg-4
 RUN apt-get update
 RUN apt-get -y install ffmpeg && apt-get -y install libavcodec-extra 
 RUN apt-get -y install sox
+RUN apt-get -y install curl
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
+RUN apt-get -y install nodejs
+RUN npm install
 RUN jupyter labextension install jupyterlab_tensorboard
 RUN pip install jupyterlab_github
 RUN jupyter labextension install @jupyterlab/github
