@@ -24,7 +24,8 @@ RUN pip3 install \
   librosa \
   SpeechRecognition \
   spectrum \
-  tqdm
+  tqdm \
+  jupyterlab
 RUN pip3 install pysptk  
 RUN pip3 install samplerate
 RUN add-apt-repository ppa:jonathonf/ffmpeg-4
