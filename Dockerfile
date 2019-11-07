@@ -26,7 +26,14 @@ RUN pip3 install \
   spectrum \
   tqdm \
   jupyterlab \
-  jupyter-tensorboard
+  tornado \
+  jupyter-tensorboard\ 
+  cython
+
+RUN pip3 install https://github.com/schmiph2/pystoi/archive/master.zip
+RUN pip3 install https://github.com/schmiph2/python-pesq/archive/master.zip
+RUN pip3 install https://github.com/schmiph2/pysepm/archive/master.zip
+
 RUN pip3 install pysptk  
 RUN pip3 install samplerate
 RUN add-apt-repository ppa:jonathonf/ffmpeg-4
