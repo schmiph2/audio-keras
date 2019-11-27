@@ -1,4 +1,4 @@
-FROM  tensorflow / tensorflow:1.15.0-gpu-py3-jupyter
+FROM  tensorflow/tensorflow:nightly-gpu-py3
 
 # Update List of avai. Packages and intall additional packages
 RUN DEBIAN_FRONTEND=noninteractive apt install -y tzdata
