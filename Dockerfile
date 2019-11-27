@@ -28,7 +28,10 @@ RUN pip3 install \
   jupyterlab \
   tornado \
   jupyter-tensorboard\ 
-  cython
+  cython \
+  pydot \
+  graphviz 
+  
 
 RUN pip3 install https://github.com/schmiph2/pystoi/archive/master.zip
 RUN pip3 install https://github.com/schmiph2/python-pesq/archive/master.zip
