@@ -8,6 +8,7 @@ RUN apt-get update && apt-get -y install \
 RUN apt-get -y install python3-dev
 RUN apt-get update && apt-get install -y git
 RUN apt-get -y install htop
+RUN apt-get -y install graphviz
 RUN pip3 install --upgrade -I setuptools
 RUN pip3 install --upgrade keras 	
 RUN pip3 install \
