@@ -32,7 +32,7 @@ RUN pip3 install \
   cython \
   pydot \
   graphviz 
-  
+  nvidia-ml-py3
 
 RUN pip3 install https://github.com/schmiph2/pystoi/archive/master.zip
 RUN pip3 install https://github.com/schmiph2/python-pesq/archive/master.zip
