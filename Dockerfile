@@ -31,7 +31,7 @@ RUN pip3 install \
   jupyter-tensorboard\ 
   cython \
   pydot \
-  graphviz 
+  graphviz \
   nvidia-ml-py3 \
   keras-drop-connect
 
