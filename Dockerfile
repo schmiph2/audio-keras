@@ -1,7 +1,7 @@
 FROM  tensorflow/tensorflow:latest-gpu-py3
 
 # Update List of avai. Packages and intall additional packages
-RUN DEBIAN_FRONTEND=noninteractive apt install -y tzdata
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y tzdata
 RUN apt-get update && apt-get -y install \
 			python3-tk \
 	&& rm -rf /var/lib/apt/lists/* #cleans up apt cache -> reduces image size
