@@ -1,11 +1,13 @@
 FROM  tensorflow/tensorflow:latest-gpu-py3
 
+ARG DEBIAN_FRONTEND=noninteractive
+
 # Update List of avai. Packages and intall additional packages
 RUN apt-get update && apt-get -y install \
 			python3-tk \
 	&& rm -rf /var/lib/apt/lists/* #cleans up apt cache -> reduces image size
 	
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y tzdata
+RUN apt-get  -y install tzdata
 RUN apt-get -y install python3-dev
 RUN apt-get update && apt-get install -y git
 RUN apt-get -y install htop
